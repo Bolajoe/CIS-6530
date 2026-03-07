@@ -1,0 +1,326 @@
+Submission 4
+
+•Task
+: Pre-process raw extracted OpCode files and apply classification algorithms (SVM, KNN (k=3.5),
+Decision Tree) on 1-Gram and 2-Gram OpCodes. Evaluate the performance of these classifiers.
+
+•Deliverables
+:
+1.A .zip file containing:
+
+▪Pre-processing Script(s)
+
+▪Classifier Implementation Script(s): Include scripts for plotting performance metrics.
+
+▪Dataset Folder: Contains the processed OpCode dataset.
+
+2.A technical report (.pdf) explaining the implementation process and the performance of the
+classifiers, including metrics such as Accuracy, Recall, Precision, F-measure, and Confusion Matrix.
+•Submission Locations:
+oSubmit a.zip file to your group’s GitHub repository.
+ 
+Submission focus:
+ 
+Preprocess OpCodes; run SVM, KNN (k=3.5), Decision Tree on 1-gram and 2-gram OpCodes; report metrics including Accuracy, Recall, Precision, F-measure, Confusion
+Matrix; include scripts/dataset + technical report.
+
+Criteria and weights (100 points)
+
+1.Preprocessing pipeline quality and correctness (20 points)
+
+•A+/A:
+ 
+Preprocessing is clearly justified and consistent; produces stable 1-gram and 2-gram feature representations; addresses leakage risks and class balance considerations.
+
+2.Algorithm implementation fidelity (SVM, KNN, Decision Tree) (20 points)
+
+•A+/A:
+ 
+Correct implementations with sensible parameter handling; clearly separates 1-gram vs 2-gram experiments; multi-class handling is explicit and correct.
+
+3.Experimental design and evaluation methodology (20 points)
+
+•A+/A:
+
+Sound train/test (or cross-validation) procedure; avoids contamination; reports
+dataset splits, random seeds, and any tuning strategy.
+
+4.Metrics computation and reporting quality (20 points)
+
+•A+/A:
+ 
+Accurately reports Accuracy, Recall, Precision, F-measure, and Confusion
+Matrix; interprets them meaningfully, including multi-class implications and error
+patterns.
+
+5.Reproducibility and artifact completeness (15 points)
+
+•A+/A:
+ 
+Includes preprocessing scripts, classifier scripts (with plotting), and processed
+dataset folder; clear run instructions; outputs reproducible.
+
+6.Technical report quality (5 points)
+
+•A+/A:
+ 
+Concise, technical, and well-structured; ties results to methodology and
+limitations.
+
+Overall band anchors (Submission 4)
+
+•A+ (90–100):
+ 
+Methodologically rigorous multi-class study with clean preprocessing,
+correct models, and insightful error analysis.
+
+
+
+
+
+
+Submission 5
+
+•Task
+: Implement the method proposed in the paper
+ 
+"Deep Android Malware Detection"
+ 
+[4] on your
+collected OpCodes and evaluate its performance. Compare the results with the classifiers used in
+Submission 4.
+
+•
+ 
+Deliverables
+:
+
+1.
+ 
+A .zip file containing all scripts required to run the implementation.
+
+2.
+ 
+A finalized technical report (.pdf) summarizing the performance evaluation and comparison of all
+classification methods.
+
+•
+ 
+Submission Locations
+:
+
+o
+ 
+Submit
+ 
+a
+ 
+.zip file to your group’s GitHub repository.
+ 
+Only one member of the group needs to send
+the instructor an email with the link to this specific Zip file in their Github before deadline. Make
+sure to CC the TA and all group members in your email.
+
+o
+ 
+Submit the technical report
+ 
+in .pdf format
+ 
+to CourseLink.
+ 
+One submission should be made for each
+group.
+
+Submission 5 Rubric (Out of 100)
+
+Submission focus:
+ 
+Implement the method in “Deep Android Malware Detection” on collected
+OpCodes; evaluate; compare to Submission 4 classifiers; submit scripts + finalized technical
+report.
+
+Criteria and weights (100 points)
+
+1.
+ 
+Implementation fidelity to the target method (25 points)
+
+•
+ 
+A+/A:
+ 
+Clear, technically faithful implementation (or carefully justified adaptation to
+OpCodes); architecture/data flow aligns with the paper’s core idea; key design
+choices are explained.
+
+•
+ 
+B range:
+ 
+Implementation is broadly aligned but with unclear deviations or missing
+key components.
+
+•
+ 
+C/F:
+ 
+Implementation does not resemble the intended method or is not functional.
+
+2.
+ 
+Experimental design and evaluation rigor (20 points)
+•
+ 
+A+/A:
+ 
+Proper training/validation/testing protocol; avoids leakage; reports seeds,
+splits, and hyperparameters; addresses multi
+-
+class learning explicitly.
+
+•
+ 
+B range:
+ 
+Basic evaluation but incomplete reporting or weak control of confounds.
+
+•
+ 
+C/F:
+ 
+Evaluation is not credible or cannot be verified.
+
+3.
+ 
+Comparative analysis versus classical baselines (Submission 4) (25 points)
+
+•
+ 
+A+/A:
+ 
+Direct, apples
+-
+to
+-
+apples comparison to SVM/KNN/DT results; consistent
+dataset/splits/metrics; explains why results differ (representation, capacity, data
+regime, error modes).
+
+•
+ 
+B range:
+ 
+Comparison present but partially inconsistent or thinly interpreted.
+
+•
+ 
+C/F:
+ 
+Little/no meaningful comparison; mismatched conditions invalidate claims.
+
+4.
+ 
+Results reporting quality and interpretation (15 points)
+
+•
+ 
+A+/A:
+ 
+Reports primary metrics (including confusion matrix where appropriate),
+highlights per
+-
+class failures, and offers defensible conclusions with limitations.
+
+•
+ 
+B range:
+ 
+Reports results but interpretation is generic or overconfident.
+
+•
+ 
+C/F:
+ 
+Missing key results, or claims not supported by evidence.
+
+5.
+ 
+Reproducibility: scripts, configuration, and run instructions (10 points)
+
+•
+ 
+A+/A:
+ 
+Zip contains all scripts required to run; includes environment/dependency
+notes and an execution path that a TA can follow.
+
+•
+ 
+B range:
+ 
+Mostly reproducible but missing some details.
+
+•
+ 
+C/F:
+ 
+Non
+-
+reproducible; key scripts/configs missing.
+
+6.
+ 
+Final technical report quality (5 points)
+
+•
+ 
+A+/A:
+ 
+Well
+-
+structured final report; succinct but complete; communicates
+contribution, method, results, and comparison.
+
+•
+ 
+B/C:
+ 
+Adequate but uneven.
+
+•
+ 
+F:
+ 
+Not submitted or not meaningful.
+
+Overall band anchors (Submission 5)
+
+•
+ 
+A+ (90
+–
+100):
+ 
+Faithful deep method implementation + rigorous evaluation +
+defensible, controlled comparison to baselines.
+
+•
+ 
+B (73
+–
+76):
+ 
+Working implementation and basic comparison; limited rigor and analysis
+depth.
+
+•
+ 
+F (Below 65):
+ 
+Missing implementation components, unreliable evaluation, or
+absent/invalid comparism
+
+
+
+ 
